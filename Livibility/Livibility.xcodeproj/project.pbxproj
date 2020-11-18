@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02609A764C57E71ED450E3E2 /* libPods-LivibilityUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EB4E6A9E939470C74C244F /* libPods-LivibilityUITests.a */; };
+		ABAF56179E8B564DF09BA7D7 /* Pods_Livibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2BD1CAE29646689EF83217 /* Pods_Livibility.framework */; };
+		AF7C335F254F892E00BA64A8 /* ItemTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C335E254F892E00BA64A8 /* ItemTrackerViewController.swift */; };
+		AFE225B8254E1F800099AE6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225B7254E1F800099AE6C /* AppDelegate.swift */; };
+		AFE225BA254E1F800099AE6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225B9254E1F800099AE6C /* SceneDelegate.swift */; };
+		AFE225BC254E1F800099AE6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225BB254E1F800099AE6C /* ViewController.swift */; };
+		AFE225BF254E1F800099AE6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE225BD254E1F800099AE6C /* Main.storyboard */; };
+		AFE225C2254E1F800099AE6C /* Livibility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFE225C0254E1F800099AE6C /* Livibility.xcdatamodeld */; };
+		AFE225C4254E1F840099AE6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE225C3254E1F840099AE6C /* Assets.xcassets */; };
+		AFE225C7254E1F840099AE6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE225C5254E1F840099AE6C /* LaunchScreen.storyboard */; };
+		AFE225D2254E1F840099AE6C /* LivibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225D1254E1F840099AE6C /* LivibilityTests.swift */; };
+		AFE225DD254E1F850099AE6C /* LivibilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225DC254E1F850099AE6C /* LivibilityUITests.swift */; };
+		AFEEE72A2564CA150048A16D /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEEE7292564CA150048A16D /* JournalEntryViewController.swift */; };
+		B90B85A4FFD37E6EAFD6FF4B /* libPods-LivibilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A738144D8FAC2FB666009B /* libPods-LivibilityTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFE225CE254E1F840099AE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE225AC254E1F800099AE6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE225B3254E1F800099AE6C;
+			remoteInfo = Livibility;
+		};
+		AFE225D9254E1F850099AE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFE225AC254E1F800099AE6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE225B3254E1F800099AE6C;
+			remoteInfo = Livibility;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32D57489914D1889BAF2FF5F /* Pods-LivibilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivibilityTests.debug.xcconfig"; path = "Target Support Files/Pods-LivibilityTests/Pods-LivibilityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37A738144D8FAC2FB666009B /* libPods-LivibilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivibilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B907C17DEB1D48D7FD40ADD /* Pods-Livibility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livibility.release.xcconfig"; path = "Target Support Files/Pods-Livibility/Pods-Livibility.release.xcconfig"; sourceTree = "<group>"; };
+		658E5B185D98A7BC71E5B033 /* Pods-LivibilityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivibilityUITests.release.xcconfig"; path = "Target Support Files/Pods-LivibilityUITests/Pods-LivibilityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D2BD1CAE29646689EF83217 /* Pods_Livibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Livibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFA5854C1A5AB21B6D7DB5E /* Pods-LivibilityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivibilityUITests.debug.xcconfig"; path = "Target Support Files/Pods-LivibilityUITests/Pods-LivibilityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		80B6526DFDF97586818976A0 /* Pods-Livibility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livibility.debug.xcconfig"; path = "Target Support Files/Pods-Livibility/Pods-Livibility.debug.xcconfig"; sourceTree = "<group>"; };
+		AF7C335E254F892E00BA64A8 /* ItemTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTrackerViewController.swift; sourceTree = "<group>"; };
+		AFE225B4254E1F800099AE6C /* Livibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE225B7254E1F800099AE6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFE225B9254E1F800099AE6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFE225BB254E1F800099AE6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFE225BE254E1F800099AE6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFE225C1254E1F800099AE6C /* Livibility.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Livibility.xcdatamodel; sourceTree = "<group>"; };
+		AFE225C3254E1F840099AE6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFE225C6254E1F840099AE6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFE225C8254E1F840099AE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE225CD254E1F840099AE6C /* LivibilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivibilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE225D1254E1F840099AE6C /* LivibilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivibilityTests.swift; sourceTree = "<group>"; };
+		AFE225D3254E1F840099AE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE225D8254E1F850099AE6C /* LivibilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivibilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE225DC254E1F850099AE6C /* LivibilityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivibilityUITests.swift; sourceTree = "<group>"; };
+		AFE225DE254E1F850099AE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFEEE7292564CA150048A16D /* JournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewController.swift; sourceTree = "<group>"; };
+		B2DF9127808B2ABCC80C113F /* Pods-LivibilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivibilityTests.release.xcconfig"; path = "Target Support Files/Pods-LivibilityTests/Pods-LivibilityTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9EB4E6A9E939470C74C244F /* libPods-LivibilityUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivibilityUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFE225B1254E1F800099AE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAF56179E8B564DF09BA7D7 /* Pods_Livibility.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE225CA254E1F840099AE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90B85A4FFD37E6EAFD6FF4B /* libPods-LivibilityTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE225D5254E1F840099AE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02609A764C57E71ED450E3E2 /* libPods-LivibilityUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF6BB19425633FDA00CF44E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFDB27BAC69A19EF45A4CD4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80B6526DFDF97586818976A0 /* Pods-Livibility.debug.xcconfig */,
+				5B907C17DEB1D48D7FD40ADD /* Pods-Livibility.release.xcconfig */,
+				32D57489914D1889BAF2FF5F /* Pods-LivibilityTests.debug.xcconfig */,
+				B2DF9127808B2ABCC80C113F /* Pods-LivibilityTests.release.xcconfig */,
+				6EFA5854C1A5AB21B6D7DB5E /* Pods-LivibilityUITests.debug.xcconfig */,
+				658E5B185D98A7BC71E5B033 /* Pods-LivibilityUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFE225AB254E1F800099AE6C = {
+			isa = PBXGroup;
+			children = (
+				AFE225B6254E1F800099AE6C /* Livibility */,
+				AFE225D0254E1F840099AE6C /* LivibilityTests */,
+				AFE225DB254E1F850099AE6C /* LivibilityUITests */,
+				AFE225B5254E1F800099AE6C /* Products */,
+				AFDB27BAC69A19EF45A4CD4F /* Pods */,
+				B1475110E2BA760D505AE6E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFE225B5254E1F800099AE6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFE225B4254E1F800099AE6C /* Livibility.app */,
+				AFE225CD254E1F840099AE6C /* LivibilityTests.xctest */,
+				AFE225D8254E1F850099AE6C /* LivibilityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFE225B6254E1F800099AE6C /* Livibility */ = {
+			isa = PBXGroup;
+			children = (
+				AF6BB19425633FDA00CF44E6 /* Model */,
+				AFE225B7254E1F800099AE6C /* AppDelegate.swift */,
+				AFE225B9254E1F800099AE6C /* SceneDelegate.swift */,
+				AFE225BB254E1F800099AE6C /* ViewController.swift */,
+				AF7C335E254F892E00BA64A8 /* ItemTrackerViewController.swift */,
+				AFEEE7292564CA150048A16D /* JournalEntryViewController.swift */,
+				AFE225BD254E1F800099AE6C /* Main.storyboard */,
+				AFE225C3254E1F840099AE6C /* Assets.xcassets */,
+				AFE225C5254E1F840099AE6C /* LaunchScreen.storyboard */,
+				AFE225C8254E1F840099AE6C /* Info.plist */,
+				AFE225C0254E1F800099AE6C /* Livibility.xcdatamodeld */,
+			);
+			path = Livibility;
+			sourceTree = "<group>";
+		};
+		AFE225D0254E1F840099AE6C /* LivibilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFE225D1254E1F840099AE6C /* LivibilityTests.swift */,
+				AFE225D3254E1F840099AE6C /* Info.plist */,
+			);
+			path = LivibilityTests;
+			sourceTree = "<group>";
+		};
+		AFE225DB254E1F850099AE6C /* LivibilityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFE225DC254E1F850099AE6C /* LivibilityUITests.swift */,
+				AFE225DE254E1F850099AE6C /* Info.plist */,
+			);
+			path = LivibilityUITests;
+			sourceTree = "<group>";
+		};
+		B1475110E2BA760D505AE6E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D2BD1CAE29646689EF83217 /* Pods_Livibility.framework */,
+				37A738144D8FAC2FB666009B /* libPods-LivibilityTests.a */,
+				D9EB4E6A9E939470C74C244F /* libPods-LivibilityUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFE225B3254E1F800099AE6C /* Livibility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE225E1254E1F850099AE6C /* Build configuration list for PBXNativeTarget "Livibility" */;
+			buildPhases = (
+				147CB425E024FFB5DF90E5F6 /* [CP] Check Pods Manifest.lock */,
+				AFE225B0254E1F800099AE6C /* Sources */,
+				AFE225B1254E1F800099AE6C /* Frameworks */,
+				AFE225B2254E1F800099AE6C /* Resources */,
+				CBB3A32BE6BCA8AFA5989ADF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Livibility;
+			productName = Livibility;
+			productReference = AFE225B4254E1F800099AE6C /* Livibility.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFE225CC254E1F840099AE6C /* LivibilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE225E4254E1F850099AE6C /* Build configuration list for PBXNativeTarget "LivibilityTests" */;
+			buildPhases = (
+				56F81F9B7C448BD8C17D25E4 /* [CP] Check Pods Manifest.lock */,
+				AFE225C9254E1F840099AE6C /* Sources */,
+				AFE225CA254E1F840099AE6C /* Frameworks */,
+				AFE225CB254E1F840099AE6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE225CF254E1F840099AE6C /* PBXTargetDependency */,
+			);
+			name = LivibilityTests;
+			productName = LivibilityTests;
+			productReference = AFE225CD254E1F840099AE6C /* LivibilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFE225D7254E1F840099AE6C /* LivibilityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE225E7254E1F850099AE6C /* Build configuration list for PBXNativeTarget "LivibilityUITests" */;
+			buildPhases = (
+				14181C51DD812564D42A8DEE /* [CP] Check Pods Manifest.lock */,
+				AFE225D4254E1F840099AE6C /* Sources */,
+				AFE225D5254E1F840099AE6C /* Frameworks */,
+				AFE225D6254E1F840099AE6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE225DA254E1F850099AE6C /* PBXTargetDependency */,
+			);
+			name = LivibilityUITests;
+			productName = LivibilityUITests;
+			productReference = AFE225D8254E1F850099AE6C /* LivibilityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFE225AC254E1F800099AE6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					AFE225B3254E1F800099AE6C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					AFE225CC254E1F840099AE6C = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = AFE225B3254E1F800099AE6C;
+					};
+					AFE225D7254E1F840099AE6C = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = AFE225B3254E1F800099AE6C;
+					};
+				};
+			};
+			buildConfigurationList = AFE225AF254E1F800099AE6C /* Build configuration list for PBXProject "Livibility" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFE225AB254E1F800099AE6C;
+			productRefGroup = AFE225B5254E1F800099AE6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFE225B3254E1F800099AE6C /* Livibility */,
+				AFE225CC254E1F840099AE6C /* LivibilityTests */,
+				AFE225D7254E1F840099AE6C /* LivibilityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFE225B2254E1F800099AE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE225C7254E1F840099AE6C /* LaunchScreen.storyboard in Resources */,
+				AFE225C4254E1F840099AE6C /* Assets.xcassets in Resources */,
+				AFE225BF254E1F800099AE6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE225CB254E1F840099AE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE225D6254E1F840099AE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14181C51DD812564D42A8DEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LivibilityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		147CB425E024FFB5DF90E5F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Livibility-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56F81F9B7C448BD8C17D25E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LivibilityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB3A32BE6BCA8AFA5989ADF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Livibility/Pods-Livibility-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Livibility/Pods-Livibility-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Livibility/Pods-Livibility-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFE225B0254E1F800099AE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE225C2254E1F800099AE6C /* Livibility.xcdatamodeld in Sources */,
+				AFE225BC254E1F800099AE6C /* ViewController.swift in Sources */,
+				AFEEE72A2564CA150048A16D /* JournalEntryViewController.swift in Sources */,
+				AFE225B8254E1F800099AE6C /* AppDelegate.swift in Sources */,
+				AFE225BA254E1F800099AE6C /* SceneDelegate.swift in Sources */,
+				AF7C335F254F892E00BA64A8 /* ItemTrackerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE225C9254E1F840099AE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE225D2254E1F840099AE6C /* LivibilityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE225D4254E1F840099AE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE225DD254E1F850099AE6C /* LivibilityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFE225CF254E1F840099AE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE225B3254E1F800099AE6C /* Livibility */;
+			targetProxy = AFE225CE254E1F840099AE6C /* PBXContainerItemProxy */;
+		};
+		AFE225DA254E1F850099AE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE225B3254E1F800099AE6C /* Livibility */;
+			targetProxy = AFE225D9254E1F850099AE6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFE225BD254E1F800099AE6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFE225BE254E1F800099AE6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFE225C5254E1F840099AE6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFE225C6254E1F840099AE6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFE225DF254E1F850099AE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFE225E0254E1F850099AE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFE225E2254E1F850099AE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B6526DFDF97586818976A0 /* Pods-Livibility.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Livibility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CupstartProject.Livibility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFE225E3254E1F850099AE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B907C17DEB1D48D7FD40ADD /* Pods-Livibility.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Livibility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CupstartProject.Livibility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFE225E5254E1F850099AE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D57489914D1889BAF2FF5F /* Pods-LivibilityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LivibilityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CupstartProject.LivibilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livibility.app/Livibility";
+			};
+			name = Debug;
+		};
+		AFE225E6254E1F850099AE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2DF9127808B2ABCC80C113F /* Pods-LivibilityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LivibilityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CupstartProject.LivibilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livibility.app/Livibility";
+			};
+			name = Release;
+		};
+		AFE225E8254E1F850099AE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFA5854C1A5AB21B6D7DB5E /* Pods-LivibilityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LivibilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CupstartProject.LivibilityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Livibility;
+			};
+			name = Debug;
+		};
+		AFE225E9254E1F850099AE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658E5B185D98A7BC71E5B033 /* Pods-LivibilityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LivibilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CupstartProject.LivibilityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Livibility;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFE225AF254E1F800099AE6C /* Build configuration list for PBXProject "Livibility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE225DF254E1F850099AE6C /* Debug */,
+				AFE225E0254E1F850099AE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE225E1254E1F850099AE6C /* Build configuration list for PBXNativeTarget "Livibility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE225E2254E1F850099AE6C /* Debug */,
+				AFE225E3254E1F850099AE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE225E4254E1F850099AE6C /* Build configuration list for PBXNativeTarget "LivibilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE225E5254E1F850099AE6C /* Debug */,
+				AFE225E6254E1F850099AE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE225E7254E1F850099AE6C /* Build configuration list for PBXNativeTarget "LivibilityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE225E8254E1F850099AE6C /* Debug */,
+				AFE225E9254E1F850099AE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFE225C0254E1F800099AE6C /* Livibility.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFE225C1254E1F800099AE6C /* Livibility.xcdatamodel */,
+			);
+			currentVersion = AFE225C1254E1F800099AE6C /* Livibility.xcdatamodel */;
+			path = Livibility.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AFE225AC254E1F800099AE6C /* Project object */;
+}
