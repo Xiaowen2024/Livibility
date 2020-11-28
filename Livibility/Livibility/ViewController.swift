@@ -44,6 +44,7 @@ class ViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource {
         self.navigationItem.rightBarButtonItem = todayItem
         // For UITest
         self.calendar.accessibilityIdentifier = "calendar"
+        
     }
     
     @objc func todayItemClicked(sender: AnyObject) {
@@ -56,7 +57,7 @@ class ViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource {
         let string = formatter.string(from: date)
         print ("\(string)")
         self.present(UIViewController(), animated: true, completion: nil)
-       
+        self.navigationController?.pushViewController(JournalEntryViewController(), animated: true)
        
     }
     func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {

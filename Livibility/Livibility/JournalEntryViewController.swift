@@ -17,12 +17,20 @@ class JournalEntryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "My Entries"
+        self.title = "Journals"
         
         self.tableView.estimatedRowHeight = 44
+    
+        
      //   self.tableView.rowHeight = UITableViewAutomaticDimension
  
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addEntries"{
+            let controller = segue.destination as! addNewEntryViewController
+    
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -109,6 +117,7 @@ extension JournalEntryViewController {
         return [delete,share]
         
     }
+    
     
 }
 
