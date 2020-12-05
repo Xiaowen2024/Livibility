@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		02609A764C57E71ED450E3E2 /* libPods-LivibilityUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EB4E6A9E939470C74C244F /* libPods-LivibilityUITests.a */; };
 		ABAF56179E8B564DF09BA7D7 /* Pods_Livibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2BD1CAE29646689EF83217 /* Pods_Livibility.framework */; };
+		AF78CE4E257438C90081E2B2 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CE4D257438C90081E2B2 /* profileViewController.swift */; };
+		AF78CE50257438E20081E2B2 /* futureLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CE4F257438E20081E2B2 /* futureLetterViewController.swift */; };
+		AF78CE5225743B470081E2B2 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CE5125743B460081E2B2 /* homeViewController.swift */; };
 		AF7C335F254F892E00BA64A8 /* ItemTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C335E254F892E00BA64A8 /* ItemTrackerViewController.swift */; };
+		AFC7E22C2564F745007DBF52 /* AddNewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7E22B2564F745007DBF52 /* AddNewEntryViewController.swift */; };
+		AFC9FA65257C27C600853398 /* Journal+coreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC9FA64257C27C600853398 /* Journal+coreDataClass.swift */; };
+		AFC9FA67257C283600853398 /* Jounral+coreDataProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC9FA66257C283600853398 /* Jounral+coreDataProperty.swift */; };
 		AFE225B8254E1F800099AE6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225B7254E1F800099AE6C /* AppDelegate.swift */; };
 		AFE225BA254E1F800099AE6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225B9254E1F800099AE6C /* SceneDelegate.swift */; };
 		AFE225BC254E1F800099AE6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225BB254E1F800099AE6C /* ViewController.swift */; };
@@ -19,6 +25,8 @@
 		AFE225C7254E1F840099AE6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE225C5254E1F840099AE6C /* LaunchScreen.storyboard */; };
 		AFE225D2254E1F840099AE6C /* LivibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225D1254E1F840099AE6C /* LivibilityTests.swift */; };
 		AFE225DD254E1F850099AE6C /* LivibilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE225DC254E1F850099AE6C /* LivibilityUITests.swift */; };
+		AFE9583E25747ACD00EC5336 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9583D25747ACD00EC5336 /* LoginViewController.swift */; };
+		AFE9584025747AEB00EC5336 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9583F25747AEA00EC5336 /* SignUpViewController.swift */; };
 		AFEEE72A2564CA150048A16D /* JournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEEE7292564CA150048A16D /* JournalEntryViewController.swift */; };
 		B90B85A4FFD37E6EAFD6FF4B /* libPods-LivibilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A738144D8FAC2FB666009B /* libPods-LivibilityTests.a */; };
 /* End PBXBuildFile section */
@@ -48,7 +56,13 @@
 		6D2BD1CAE29646689EF83217 /* Pods_Livibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Livibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFA5854C1A5AB21B6D7DB5E /* Pods-LivibilityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivibilityUITests.debug.xcconfig"; path = "Target Support Files/Pods-LivibilityUITests/Pods-LivibilityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		80B6526DFDF97586818976A0 /* Pods-Livibility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livibility.debug.xcconfig"; path = "Target Support Files/Pods-Livibility/Pods-Livibility.debug.xcconfig"; sourceTree = "<group>"; };
+		AF78CE4D257438C90081E2B2 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		AF78CE4F257438E20081E2B2 /* futureLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = futureLetterViewController.swift; sourceTree = "<group>"; };
+		AF78CE5125743B460081E2B2 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		AF7C335E254F892E00BA64A8 /* ItemTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTrackerViewController.swift; sourceTree = "<group>"; };
+		AFC7E22B2564F745007DBF52 /* AddNewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEntryViewController.swift; sourceTree = "<group>"; };
+		AFC9FA64257C27C600853398 /* Journal+coreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal+coreDataClass.swift"; sourceTree = "<group>"; };
+		AFC9FA66257C283600853398 /* Jounral+coreDataProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jounral+coreDataProperty.swift"; sourceTree = "<group>"; };
 		AFE225B4254E1F800099AE6C /* Livibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE225B7254E1F800099AE6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE225B9254E1F800099AE6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +78,8 @@
 		AFE225D8254E1F850099AE6C /* LivibilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivibilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE225DC254E1F850099AE6C /* LivibilityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivibilityUITests.swift; sourceTree = "<group>"; };
 		AFE225DE254E1F850099AE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE9583D25747ACD00EC5336 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFE9583F25747AEA00EC5336 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AFEEE7292564CA150048A16D /* JournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewController.swift; sourceTree = "<group>"; };
 		B2DF9127808B2ABCC80C113F /* Pods-LivibilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivibilityTests.release.xcconfig"; path = "Target Support Files/Pods-LivibilityTests/Pods-LivibilityTests.release.xcconfig"; sourceTree = "<group>"; };
 		D9EB4E6A9E939470C74C244F /* libPods-LivibilityUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivibilityUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +116,9 @@
 		AF6BB19425633FDA00CF44E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AFE225C0254E1F800099AE6C /* Livibility.xcdatamodeld */,
+				AFC9FA64257C27C600853398 /* Journal+coreDataClass.swift */,
+				AFC9FA66257C283600853398 /* Jounral+coreDataProperty.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,12 +166,17 @@
 				AFE225B9254E1F800099AE6C /* SceneDelegate.swift */,
 				AFE225BB254E1F800099AE6C /* ViewController.swift */,
 				AF7C335E254F892E00BA64A8 /* ItemTrackerViewController.swift */,
+				AFC7E22B2564F745007DBF52 /* AddNewEntryViewController.swift */,
 				AFEEE7292564CA150048A16D /* JournalEntryViewController.swift */,
 				AFE225BD254E1F800099AE6C /* Main.storyboard */,
+				AFE9583D25747ACD00EC5336 /* LoginViewController.swift */,
+				AFE9583F25747AEA00EC5336 /* SignUpViewController.swift */,
+				AF78CE5125743B460081E2B2 /* homeViewController.swift */,
+				AF78CE4F257438E20081E2B2 /* futureLetterViewController.swift */,
+				AF78CE4D257438C90081E2B2 /* profileViewController.swift */,
 				AFE225C3254E1F840099AE6C /* Assets.xcassets */,
 				AFE225C5254E1F840099AE6C /* LaunchScreen.storyboard */,
 				AFE225C8254E1F840099AE6C /* Info.plist */,
-				AFE225C0254E1F800099AE6C /* Livibility.xcdatamodeld */,
 			);
 			path = Livibility;
 			sourceTree = "<group>";
@@ -406,11 +430,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFE225C2254E1F800099AE6C /* Livibility.xcdatamodeld in Sources */,
+				AFC9FA67257C283600853398 /* Jounral+coreDataProperty.swift in Sources */,
+				AF78CE50257438E20081E2B2 /* futureLetterViewController.swift in Sources */,
 				AFE225BC254E1F800099AE6C /* ViewController.swift in Sources */,
+				AF78CE5225743B470081E2B2 /* homeViewController.swift in Sources */,
 				AFEEE72A2564CA150048A16D /* JournalEntryViewController.swift in Sources */,
 				AFE225B8254E1F800099AE6C /* AppDelegate.swift in Sources */,
+				AFE9584025747AEB00EC5336 /* SignUpViewController.swift in Sources */,
+				AFC7E22C2564F745007DBF52 /* AddNewEntryViewController.swift in Sources */,
 				AFE225BA254E1F800099AE6C /* SceneDelegate.swift in Sources */,
+				AF78CE4E257438C90081E2B2 /* profileViewController.swift in Sources */,
+				AFC9FA65257C27C600853398 /* Journal+coreDataClass.swift in Sources */,
 				AF7C335F254F892E00BA64A8 /* ItemTrackerViewController.swift in Sources */,
+				AFE9583E25747ACD00EC5336 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

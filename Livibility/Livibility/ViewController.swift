@@ -9,7 +9,8 @@ import UIKit
 import FSCalendar
 
 
-class ViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource {
+
+@objc class CalendarViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource {
     @IBOutlet var calendar: FSCalendar!
     fileprivate let gregorian: Calendar = Calendar(identifier: .gregorian)
     fileprivate lazy var dateFormatter1: DateFormatter = {
@@ -23,8 +24,8 @@ class ViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource {
         return formatter
     }()
     
-   
-
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         calendar.delegate=self
@@ -52,14 +53,21 @@ class ViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource {
     }
 
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let navController = UINavigationController(rootViewController: JournalEntryViewController())
+        
+        //self.navigationController?.pushViewController(JournalEntryViewController(), animated: true)
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE MM-dd-YYYY"
         let string = formatter.string(from: date)
         print ("\(string)")
-        self.present(UIViewController(), animated: true, completion: nil)
-        self.navigationController?.pushViewController(JournalEntryViewController(), animated: true)
+        self.present(navController, animated: true) {
+
+        }
+        
+        //self.navigationController?.pushViewController(JournalEntryViewController(), animated: true)
        
     }
+}
     func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE MM-dd-YYYY"
@@ -88,5 +96,5 @@ class ViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource {
     
 
 
-}
+
 
