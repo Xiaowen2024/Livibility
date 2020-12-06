@@ -292,11 +292,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CalendarViewController" customModule="Livibility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="br0-sp-Kp5" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="284" width="414" height="305"/>
+                                <rect key="frame" x="0.0" y="196" width="414" height="339"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="mtI-3F-90C"/>
@@ -408,19 +408,35 @@
             <objects>
                 <viewController id="EDh-C5-gjI" customClass="JournalEntryViewController" customModule="Livibility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZQr-tQ-3uv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w7c-sH-dzK">
                                 <rect key="frame" x="0.0" y="60" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Co5-ia-0Q7">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="yzi-Hy-TtD" detailTextLabel="Z4F-iG-uPZ" style="IBUITableViewCellStyleSubtitle" id="Co5-ia-0Q7">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Co5-ia-0Q7" id="r8r-ST-UIK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yzi-Hy-TtD">
+                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z4F-iG-uPZ">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -459,21 +475,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Journal " id="96X-Gm-raW">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="fJk-FP-dIw">
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="aTL-6h-EJU">
                             <connections>
-                                <action selector="returnToCalendar:" destination="EDh-C5-gjI" id="7C7-ki-BDs"/>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="backToCalendar" id="xZy-UU-x0R"/>
+                                <action selector="doneDidTapped:" destination="EDh-C5-gjI" id="lSp-vn-DtA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TH7-XR-BFj">
+                        <barButtonItem key="rightBarButtonItem" title="add" image="plus" catalog="system" id="gB4-uV-0vx">
                             <connections>
-                                <action selector="addNewEntry:" destination="EDh-C5-gjI" id="uqa-l5-uTI"/>
+                                <action selector="addDidTapped:" destination="EDh-C5-gjI" id="MDo-kh-X9a"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addNewEntryItem" destination="gJv-FR-tdO" id="0i2-Sm-Ipr"/>
                         <outlet property="backToCalendarItem" destination="aTv-kC-3ai" id="ZFm-2A-u3Q"/>
+                        <outlet property="journalEntryTable" destination="w7c-sH-dzK" id="bFw-rk-uRQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ip8-EF-ngQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -500,15 +516,26 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="New Entry" id="Lkb-D5-ji2">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="lCq-5Q-AMY"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="lCq-5Q-AMY">
+                                            <connections>
+                                                <action selector="saveJournal:" destination="vPf-uu-xOO" id="Tth-mh-fVY"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ptQ-Af-6bP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a5w-Le-zpu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="t8x-4f-g2Y" firstAttribute="leading" secondItem="a5w-Le-zpu" secondAttribute="leading" id="03N-Ii-6il"/>
+                            <constraint firstItem="ptQ-Af-6bP" firstAttribute="leading" secondItem="a5w-Le-zpu" secondAttribute="leading" id="9dt-RK-OLQ"/>
+                            <constraint firstItem="ptQ-Af-6bP" firstAttribute="trailing" secondItem="a5w-Le-zpu" secondAttribute="trailing" id="BIa-c5-8fL"/>
                             <constraint firstItem="t8x-4f-g2Y" firstAttribute="top" secondItem="a5w-Le-zpu" secondAttribute="top" id="aHN-zy-tTo"/>
                             <constraint firstItem="a5w-Le-zpu" firstAttribute="trailing" secondItem="t8x-4f-g2Y" secondAttribute="trailing" id="rmR-SD-vKx"/>
                             <constraint firstItem="a5w-Le-zpu" firstAttribute="bottom" secondItem="t8x-4f-g2Y" secondAttribute="bottom" id="vhX-iH-02r"/>
@@ -517,10 +544,70 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="ygQ-SS-nqi"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="journalField" destination="t8x-4f-g2Y" id="X0B-1u-LV7"/>
+                        <outlet property="titleFielf" destination="ptQ-Af-6bP" id="bhP-DV-zKc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvP-jU-fhk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4702.898550724638" y="756.69642857142856"/>
+        </scene>
+        <!--Journal View Controller-->
+        <scene sceneID="1yc-3M-eQH">
+            <objects>
+                <viewController id="MQU-rl-Gd2" customClass="journalViewController" customModule="Livibility" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nHC-HV-U4x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWi-xW-3qf">
+                                <rect key="frame" x="0.0" y="92" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jU5-3r-Q5m">
+                                <rect key="frame" x="0.0" y="123" width="414" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLN-CB-mHJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Journal" id="4P4-9w-JmC">
+                                        <barButtonItem key="leftBarButtonItem" title="Done" id="Qg4-En-ZdF">
+                                            <connections>
+                                                <action selector="backToJournalEntry:" destination="MQU-rl-Gd2" id="rkz-PP-beR"/>
+                                                <segue destination="EDh-C5-gjI" kind="show" identifier="backToJournalEntry" id="6ZG-HH-mDK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KZ9-id-pym"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jU5-3r-Q5m" secondAttribute="trailing" id="Vta-Tk-9A9"/>
+                            <constraint firstItem="jU5-3r-Q5m" firstAttribute="top" secondItem="MWi-xW-3qf" secondAttribute="bottom" constant="8" symbolic="YES" id="ZUc-oo-CgC"/>
+                            <constraint firstItem="jU5-3r-Q5m" firstAttribute="leading" secondItem="MWi-xW-3qf" secondAttribute="leading" id="ZZC-f5-o5O"/>
+                            <constraint firstItem="jU5-3r-Q5m" firstAttribute="bottom" secondItem="KZ9-id-pym" secondAttribute="bottom" id="eIn-JK-oKm"/>
+                            <constraint firstItem="MWi-xW-3qf" firstAttribute="top" secondItem="KZ9-id-pym" secondAttribute="top" constant="48" id="l7x-Pn-izZ"/>
+                            <constraint firstItem="jU5-3r-Q5m" firstAttribute="leading" secondItem="nHC-HV-U4x" secondAttribute="leading" id="lW3-Of-Atf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="jU5-3r-Q5m" id="zWi-Ti-FaO"/>
+                        <outlet property="nameLabel" destination="MWi-xW-3qf" id="zrS-dT-CjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ec5-wa-LbY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5605.7971014492759" y="756.69642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aNa-wW-JCA">
@@ -542,6 +629,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="6ZG-HH-mDK"/>
         <segue reference="xdQ-Wa-HWX"/>
     </inferredMetricsTieBreakers>
     <resources>
