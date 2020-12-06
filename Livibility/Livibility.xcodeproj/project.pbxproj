@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02609A764C57E71ED450E3E2 /* libPods-LivibilityUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EB4E6A9E939470C74C244F /* libPods-LivibilityUITests.a */; };
 		ABAF56179E8B564DF09BA7D7 /* Pods_Livibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2BD1CAE29646689EF83217 /* Pods_Livibility.framework */; };
+		AF286616257C592E006EA721 /* journalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF286615257C592E006EA721 /* journalViewController.swift */; };
 		AF78CE4E257438C90081E2B2 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CE4D257438C90081E2B2 /* profileViewController.swift */; };
 		AF78CE50257438E20081E2B2 /* futureLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CE4F257438E20081E2B2 /* futureLetterViewController.swift */; };
 		AF78CE5225743B470081E2B2 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CE5125743B460081E2B2 /* homeViewController.swift */; };
@@ -56,6 +57,7 @@
 		6D2BD1CAE29646689EF83217 /* Pods_Livibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Livibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFA5854C1A5AB21B6D7DB5E /* Pods-LivibilityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivibilityUITests.debug.xcconfig"; path = "Target Support Files/Pods-LivibilityUITests/Pods-LivibilityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		80B6526DFDF97586818976A0 /* Pods-Livibility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Livibility.debug.xcconfig"; path = "Target Support Files/Pods-Livibility/Pods-Livibility.debug.xcconfig"; sourceTree = "<group>"; };
+		AF286615257C592E006EA721 /* journalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalViewController.swift; sourceTree = "<group>"; };
 		AF78CE4D257438C90081E2B2 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		AF78CE4F257438E20081E2B2 /* futureLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = futureLetterViewController.swift; sourceTree = "<group>"; };
 		AF78CE5125743B460081E2B2 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				AFC7E22B2564F745007DBF52 /* AddNewEntryViewController.swift */,
 				AFEEE7292564CA150048A16D /* JournalEntryViewController.swift */,
 				AFE225BD254E1F800099AE6C /* Main.storyboard */,
+				AF286615257C592E006EA721 /* journalViewController.swift */,
 				AFE9583D25747ACD00EC5336 /* LoginViewController.swift */,
 				AFE9583F25747AEA00EC5336 /* SignUpViewController.swift */,
 				AF78CE5125743B460081E2B2 /* homeViewController.swift */,
@@ -430,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFE225C2254E1F800099AE6C /* Livibility.xcdatamodeld in Sources */,
+				AF286616257C592E006EA721 /* journalViewController.swift in Sources */,
 				AFC9FA67257C283600853398 /* Jounral+coreDataProperty.swift in Sources */,
 				AF78CE50257438E20081E2B2 /* futureLetterViewController.swift in Sources */,
 				AFE225BC254E1F800099AE6C /* ViewController.swift in Sources */,
