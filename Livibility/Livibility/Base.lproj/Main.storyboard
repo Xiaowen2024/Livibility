@@ -292,11 +292,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CalendarViewController" customModule="Livibility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="br0-sp-Kp5" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="196" width="414" height="339"/>
+                                <rect key="frame" x="0.0" y="284" width="414" height="305"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="mtI-3F-90C"/>
@@ -408,7 +408,7 @@
             <objects>
                 <viewController id="EDh-C5-gjI" customClass="JournalEntryViewController" customModule="Livibility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZQr-tQ-3uv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w7c-sH-dzK">
@@ -629,7 +629,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6ZG-HH-mDK"/>
+        <segue reference="WUz-Gs-uZc"/>
         <segue reference="xdQ-Wa-HWX"/>
     </inferredMetricsTieBreakers>
     <resources>
